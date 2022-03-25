@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(253, 228, 196);
+}
+
+
+.container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background-color: hsl(0, 0%, 99%);
+    border-bottom: 1px solid hsl(0, 0%, 96%);
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-control input { /* da co value input*/
+	border: 3px solid #3498e9;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.form-control input:placeholder-shown { /* Lop gia dau tien khi chua value input*/
+	outline: 0;    
+    border: 2px solid #f0f0f0;
+}
+.form-control input:focus-visible { /* da va dang nhap input*/
+	outline: 0;
+	border: 3px solid #447ead;
+    box-shadow: 0 0 14px 2px rgba(68, 126, 173, 0.3);
+}
+
+.form-control.success input {
+    border: 3px solid #2ecc71;
+}
+
+.form-control.error input {
+    border: 3px solid #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 62px;
+    right: 15px;
+    font-size: 24px;
+}
+
+.form-control.success i.fa-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+}
+
+.form-control.success small {
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+form input[type="submit"] {
+    background-color: #447ead;
+    border: 2px solid #447ead;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #2c52ed;
+}
